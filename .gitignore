@@ -1,0 +1,37 @@
+# === File di sistema (MacOS, Windows) ===
+.DS_Store     
+Thumbs.db      
+desktop.ini    
+
+# === Configurazioni locali dell'editor ===
+.vscode/       
+.idea/         
+
+# === File temporanei e di backup ===
+*.log          
+*.tmp          
+*.cache        
+*.bak          
+
+# === Ambiente di XAMPP ===
+xampp/         
+htdocs/        
+
+# === Composer ===
+/vendor/       
+/composer.phar 
+
+# === File di configurazione sensibili ===
+config.php     
+
+# === Dipendenze e build di Node.js (se applicabile) ===
+node_modules/  
+dist/          
+
+# === File specifici di PHP ===
+*.sql          
+.env           
+
+# === Backup e file non rilevanti ===
+*.old          
+*.swp          

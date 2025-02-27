@@ -1,0 +1,74 @@
+body {
+  background-color: #f8f9fa; /* Colore di sfondo per i margini */
+}
+
+.main-content {
+  background-color: #ffffff; /* Colore di sfondo per il contenuto principale */
+  margin: 0 auto;
+  max-width: 1200px; /* Larghezza massima del contenuto principale */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra per dare risalto */
+}
+
+.logo-img {
+  width: 50%; /* Puoi regolare questa dimensione in base alle tue esigenze */
+  height: auto;
+}
+
+.nav-link.active {
+  color: #0056b3; /* Colore del link attivo */
+  font-weight: bold; /* Grassetto per il link attivo */
+}
+
+.footer-link {
+  color: #ffffff; /* Colore del link nel footer */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  transition: color 0.3s, font-size 0.3s; /* Aggiunge una transizione per il colore e la dimensione del testo */
+}
+
+.address-link {
+  color: inherit; /* Mantiene il colore del testo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  transition: color 0.3s, transform 0.3s; /* Aggiunge una transizione per il colore e la dimensione del testo */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Colore del link quando ci passi sopra con il mouse */
+  /* font-size: 1.2em; Dimensione del testo quando ci passi sopra con il mouse */
+  transition-duration: 0.3s; /* Durata dell'animazione */
+  transform: scale(1.2); /* Effetto di ingrandimento */
+}
+
+.footer-link:hover {
+  color: #007bff; /* Colore del link quando ci passi sopra con il mouse */
+  transition-duration: 0.3s; /* Durata dell'animazione */
+  transform: scale(1.2); /* NON FUNZIONA Effetto di ingrandimento */
+}
+
+.address-link:hover {
+  color: #007bff; /* Colore del link quando ci passi sopra con il mouse */
+  transition-duration: 0.3s; /* Durata dell'animazione */
+  transform: scale(1.2); /* NON FUNZIONA Effetto di ingrandimento */
+}
+
+
+
+/*
+L'@media:
+    Condiziona l'applicazione degli stili in base alla dimensione dello schermo.
+    In questo caso, (min-width: 992px) attiva gli stili solo su schermi grandi.
+    Migliora il design rendendo la navbar responsiva, con un layout ottimizzato per schermi più grandi.
+*/
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin: 0 auto; /* Centra il contenitore di navigazione orizzontalmente */
+    display: flex; /* Dispone gli elementi del menu in riga */
+    justify-content: center; /* Allinea gli elementi al centro della navbar */
+  }
+  .navbar-nav .nav-item {
+    margin: 0 15px; /* Aggiunge uno spazio laterale di 15px tra gli elementi del menu */
+  }
+}
+
+
