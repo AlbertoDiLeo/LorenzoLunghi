@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.php">Home</a>
+                            <a class="nav-link active" href="index.php">Homeee</a>
                           </li>
                         <li class="nav-item">
                             <a class="nav-link" href="chi-sono.php">Chi sono</a>
