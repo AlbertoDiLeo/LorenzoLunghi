@@ -48,12 +48,12 @@ Titoli:
 # Parti mancanti del progetto
 
 - Home => mappa con sua posizine (API)
+       => carosello con recensioni
 - Contatti => form preventivo funzionante
 - Chat (?) => guardare sito Maggi
 - Chi sono => foto, Curriculum (?)
 - Servizi => mettere foto e sistemare titoli
 - Sezione domande frequenti (in cosa consiste la professione di geometra)
-- Header => fare sezione uguale per tutti (no copia e incolla)
 
 
 
