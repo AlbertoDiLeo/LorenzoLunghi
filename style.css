@@ -7,17 +7,7 @@ body {
   align-items: center;
 }
 
-/* Contenuto centrale effetto "foglio" */
-.content-box {
-  background-color: white;
-  width: 80%;
-  max-width: 900px;
-  padding: 40px;
-  margin-top: 40px;
-  border-radius: 10px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Ombra più marcata */
-  border: 1px solid #ccc; /* Bordo sottile per dare il senso di un foglio */
-}
+
 
 /* Navbar */
 .navbar {
@@ -55,22 +45,6 @@ body {
   max-width: 150px; /* Limite massimo per evitare che diventi troppo grande */
 }
 
-
-/* Titoli */
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #343a40;
-  text-transform: uppercase;
-  text-align: center;
-}
-.section-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #007bff;
-}
-
 /* Immagine logo */
 .logo-img {
   max-width: 200px;
@@ -78,24 +52,44 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Link indirizzo */
-.address-link {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #007bff;
-  text-decoration: none;
-}
-.address-link:hover {
-  text-decoration: underline;
+
+
+/* Contenitore delle recensioni con scorrimento orizzontale */
+#recensioniContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
 }
 
-/* Mappa */
-#map {
-  height: 400px;
-  width: 100%;
+/* Card delle recensioni */
+#recensioniContainer .card {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border: 2px solid #007bff;
 }
+
+/* Effetto smooth scrolling */
+#recensioniContainer::-webkit-scrollbar {
+  height: 5px;
+}
+
+#recensioniContainer::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+  border-radius: 5px;
+}
+
+#recensioniContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+
 
 /* Footer */
 footer {

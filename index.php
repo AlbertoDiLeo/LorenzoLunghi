@@ -119,8 +119,9 @@
 
     <?php include 'navbar.php'; ?>
 
-    <div class="container d-flex justify-content-center">
-        <div class="content-box">
+    <div class="main-content">
+
+        <!--<div class= "container d-flex justify-content-center">
             <div class="text-center mt-3">
                 <img src="immagini/Logo foto.JPG" class="img-fluid logo-img" alt="Logo Geometra Lunghi Lorenzo">
             </div>
@@ -139,7 +140,92 @@
                 </a>
                 <div id="map" class="mt-3"></div>
             </section>
-        </div>
+        </div>-->
+
+        <!-- HERO SECTION -->
+        <section class="text-center">
+            <img src="immagini/Logo foto.JPG" class="img-fluid w-50 mb-4" alt="Studio Tecnico Geometra">
+
+            <div class="container">
+                <h1 class="display-4 fw-bold text-dark">Precisione e Professionalità</h1>
+                <p class="lead text-dark">Soluzioni rapide e su misura per ogni esigenza edilizia.</p>
+            </div>
+        </section>
+
+        <!-- PRONTO INTERVENTO H-24 -->
+        <section class="py-5 bg-dark text-white text-center">
+            <div class="container">
+                <h2 class="fw-bold">Pronto Intervento H-24</h2>
+                <p class="lead">Hai un’urgenza? Contattaci subito, siamo sempre operativi per offrirti assistenza immediata.</p>
+                <a href="tel:+393343693310" class="btn btn-outline-warning btn-lg">📞 Chiama Subito</a>
+            </div>
+        </section>
+
+        <!-- CAROSELLO RECENSIONI -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Cosa dicono di noi</h2>
+                <div class="position-relative">
+                    <div id="recensioniContainer" class="d-flex overflow-auto gap-3 py-3">
+                        <!-- Template recensione (verrà clonato) -->
+                        <div id="recensioneTemplate" class="card text-center p-4" style="width: 300px; display: none;">
+                            <div class="card-body">
+                                <p class="card-text fst-italic">"Testo recensione..."</p>
+                                <h5 class="card-title fw-bold">- Nome</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHI SIAMO -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2 class="fw-bold">Chi Siamo</h2>
+                <p class="lead">Uno studio tecnico con esperienza e passione, pronto a soddisfare ogni esigenza con soluzioni su misura.</p>
+                <a href="chi-sono.php" class="btn btn-primary">Scopri di più</a>
+            </div>
+        </section>
+
+        <!-- RICHIEDI UN PREVENTIVO -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center fw-bold">Richiedi un Preventivo</h2>
+                <p class="text-center lead">Compila il modulo e riceverai una consulenza gratuita!</p>
+                <form action="preventivo.php" method="post" class="row g-3">
+
+                    <div class="col-md-6">
+                        <input type="text" name="nome" class="form-control" placeholder="Nome e Cognome" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <textarea name="richiesta" class="form-control" rows="4" placeholder="Descrivi la tua richiesta" required></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-warning btn-lg">Invia Richiesta</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- MAPPA -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold">Dove Trovarci</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
     </div>
 
     <?php include 'footer.php'; ?>
