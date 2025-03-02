@@ -50,6 +50,13 @@ body {
   text-decoration: underline;
 }
 
+.logo-navbar {
+  height: 50px; /* Regola l'altezza del logo */
+  width: auto; /* Mantiene le proporzioni */
+  max-width: 150px; /* Limite massimo per evitare che diventi troppo grande */
+}
+
+
 /* Titoli */
 .title {
   font-size: 2rem;

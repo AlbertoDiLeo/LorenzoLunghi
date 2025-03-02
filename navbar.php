@@ -1,11 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-    <div class="container">
-        <a class="navbar-brand fs-3 fw-bold" href="index.php">Geom. Lunghi Lorenzo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container d-flex align-items-center">
+        <!-- Logo a sinistra -->
+        <a class="navbar-brand d-flex align-items-center" href="index.php">
+            <img src="immagini/Logo foto navbar.JPG" alt="Logo" class="img-fluid rounded-circle" style="max-height: 60px;">
+            <span class="fs-5 fw-bold ms-3 me-5">Lorenzo Lunghi</span>
+        </a>
+
+        <!-- Bottone menu mobile a destra -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto fs-4 fw-bold">
+
+        <!-- Menu di navigazione centrato su schermi grandi -->
+        <div class="collapse navbar-collapse ms-5" id="navbarNav">
+            <ul class="navbar-nav ms-3 ms-md-5 text-center fs-5 fw-semibold">
                 <li class="nav-item">
                     <a class="nav-link active" href="index.php">Home</a>
                 </li>
@@ -22,5 +30,3 @@
         </div>
     </div>
 </nav>
-
-
