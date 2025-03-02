@@ -21,6 +21,7 @@ P.IVA 13310020964
 Iscritto all’Ordine Geometri Laureati di Lodi al n. 791 
 Iscritto all’albo dei Certificatori Energetici di Regione Lombardia al n. 34601 
 email: info.geomlunghi@gmail.com
+Via Sandro Pertini, 6 - 26817, San Martino in Strada (LO), Italia
 
 ## Di cosa si occupa Lorenzo Lunghi
 Pratiche edilizie
@@ -50,7 +51,7 @@ Titoli:
 - Footer e navbar => ok
 - Home => mappa con sua posizine (API)
        => carosello con recensioni
-- Contatti => form preventivo funzionante
+- Contatti => form preventivo funzionante ok
 - Chat (?) => guardare sito Maggi
 - Chi sono => foto, Curriculum (?)
 - Servizi => mettere foto e sistemare titoli

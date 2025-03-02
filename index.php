@@ -121,30 +121,9 @@
 
     <div class="main-content">
 
-        <!--<div class= "container d-flex justify-content-center">
-            <div class="text-center mt-3">
-                <img src="immagini/Logo foto.JPG" class="img-fluid logo-img" alt="Logo Geometra Lunghi Lorenzo">
-            </div>
-
-            <section class="text-center mt-5">
-                <h2 class="section-title">Chiamaci ora</h2>
-                <p>Per informazioni e consulenze, contattaci senza impegno.</p>
-                <a href="tel:+393343693310" class="btn btn-primary btn-lg mt-3">Chiama ora</a>
-            </section>
-
-            <section class="text-center mt-5">
-                <h2 class="section-title">Dove siamo</h2>
-                <p>Ci trovi a:</p>
-                <a href="https://maps.app.goo.gl/AydxDqMKJPuxdny78" class="address-link">
-                    <span>Via Sandro Pertini, 6 - 26817, San Martino in Strada (LO), Italia</span>
-                </a>
-                <div id="map" class="mt-3"></div>
-            </section>
-        </div>-->
-
         <!-- HERO SECTION -->
         <section class="text-center">
-            <img src="immagini/Logo foto.JPG" class="img-fluid w-50 mb-4" alt="Studio Tecnico Geometra">
+            <img src="immagini/foto-iniziale.jpg" class="img-fluid w-50 mb-4" alt="Studio Tecnico Geometra">
 
             <div class="container">
                 <h1 class="display-4 fw-bold text-dark">Precisione e Professionalità</h1>
@@ -156,7 +135,7 @@
         <section class="py-5 bg-dark text-white text-center">
             <div class="container">
                 <h2 class="fw-bold">Pronto Intervento H-24</h2>
-                <p class="lead">Hai un’urgenza? Contattaci subito, siamo sempre operativi per offrirti assistenza immediata.</p>
+                <p class="lead">Hai un’urgenza? Contattami subito, sono sempre operativo per offrirti assistenza immediata.</p>
                 <a href="tel:+393343693310" class="btn btn-outline-warning btn-lg">📞 Chiama Subito</a>
             </div>
         </section>
@@ -164,7 +143,7 @@
         <!-- CAROSELLO RECENSIONI -->
         <section class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center fw-bold mb-4">Cosa dicono di noi</h2>
+                <h2 class="text-center fw-bold mb-4">Cosa dicono di me</h2>
                 <div class="position-relative">
                     <div id="recensioniContainer" class="d-flex overflow-auto gap-3 py-3">
                         <!-- Template recensione (verrà clonato) -->
@@ -182,48 +161,15 @@
         <!-- CHI SIAMO -->
         <section class="py-5 text-center">
             <div class="container">
-                <h2 class="fw-bold">Chi Siamo</h2>
+                <h2 class="fw-bold">Chi Sono</h2>
                 <p class="lead">Uno studio tecnico con esperienza e passione, pronto a soddisfare ogni esigenza con soluzioni su misura.</p>
                 <a href="chi-sono.php" class="btn btn-primary">Scopri di più</a>
             </div>
         </section>
 
-        <!-- RICHIEDI UN PREVENTIVO -->
-        <section class="py-5 bg-dark text-white">
-            <div class="container">
-                <h2 class="text-center fw-bold">Richiedi un Preventivo</h2>
-                <p class="text-center lead">Compila il modulo e riceverai una consulenza gratuita!</p>
-                <form action="preventivo.php" method="post" class="row g-3">
+        <?php include 'form_preventivo.php'; ?>
 
-                    <div class="col-md-6">
-                        <input type="text" name="nome" class="form-control" placeholder="Nome e Cognome" required>
-                    </div>
-
-                    <div class="col-md-6">
-                        <input type="email" name="email" class="form-control" placeholder="Email" required>
-                    </div>
-
-                    <div class="col-md-12">
-                        <textarea name="richiesta" class="form-control" rows="4" placeholder="Descrivi la tua richiesta" required></textarea>
-                    </div>
-
-                    <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-warning btn-lg">Invia Richiesta</button>
-                    </div>
-
-                </form>
-            </div>
-        </section>
-
-        <!-- MAPPA -->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold">Dove Trovarci</h2>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
+        <?php include 'mappa.php'; ?>
 
 
     </div>
