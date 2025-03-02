@@ -1,74 +1,118 @@
+/* Stile generale */
 body {
-  background-color: #f8f9fa; /* Colore di sfondo per i margini */
+  font-family: 'Arial', sans-serif;
+  background-color: #dfe6ee; /* Sfondo più scuro per far risaltare il foglio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main-content {
-  background-color: #ffffff; /* Colore di sfondo per il contenuto principale */
-  margin: 0 auto;
-  max-width: 1200px; /* Larghezza massima del contenuto principale */
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra per dare risalto */
+/* Contenuto centrale effetto "foglio" */
+.content-box {
+  background-color: white;
+  width: 80%;
+  max-width: 900px;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombra più marcata */
+  border: 1px solid #ccc; /* Bordo sottile per dare il senso di un foglio */
 }
 
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Titoli */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #343a40;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Immagine logo */
 .logo-img {
-  width: 50%; /* Puoi regolare questa dimensione in base alle tue esigenze */
-  height: auto;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.nav-link.active {
-  color: #0056b3; /* Colore del link attivo */
-  font-weight: bold; /* Grassetto per il link attivo */
-}
-
-.footer-link {
-  color: #ffffff; /* Colore del link nel footer */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  transition: color 0.3s, font-size 0.3s; /* Aggiunge una transizione per il colore e la dimensione del testo */
-}
-
+/* Link indirizzo */
 .address-link {
-  color: inherit; /* Mantiene il colore del testo */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  transition: color 0.3s, transform 0.3s; /* Aggiunge una transizione per il colore e la dimensione del testo */
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
 }
-
-.nav-link:hover {
-  color: #007bff; /* Colore del link quando ci passi sopra con il mouse */
-  /* font-size: 1.2em; Dimensione del testo quando ci passi sopra con il mouse */
-  transition-duration: 0.3s; /* Durata dell'animazione */
-  transform: scale(1.2); /* Effetto di ingrandimento */
-}
-
-.footer-link:hover {
-  color: #007bff; /* Colore del link quando ci passi sopra con il mouse */
-  transition-duration: 0.3s; /* Durata dell'animazione */
-  transform: scale(1.2); /* NON FUNZIONA Effetto di ingrandimento */
-}
-
 .address-link:hover {
-  color: #007bff; /* Colore del link quando ci passi sopra con il mouse */
-  transition-duration: 0.3s; /* Durata dell'animazione */
-  transform: scale(1.2); /* NON FUNZIONA Effetto di ingrandimento */
+  text-decoration: underline;
 }
 
-
-
-/*
-L'@media:
-    Condiziona l'applicazione degli stili in base alla dimensione dello schermo.
-    In questo caso, (min-width: 992px) attiva gli stili solo su schermi grandi.
-    Migliora il design rendendo la navbar responsiva, con un layout ottimizzato per schermi più grandi.
-*/
-
-@media (min-width: 992px) {
-  .navbar-nav {
-    margin: 0 auto; /* Centra il contenitore di navigazione orizzontalmente */
-    display: flex; /* Dispone gli elementi del menu in riga */
-    justify-content: center; /* Allinea gli elementi al centro della navbar */
-  }
-  .navbar-nav .nav-item {
-    margin: 0 15px; /* Aggiunge uno spazio laterale di 15px tra gli elementi del menu */
-  }
+/* Mappa */
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #007bff;
 }
 
+/* Footer compatto su una riga */
+footer {
+  background-color: #343a40;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-icon {
+  width: 24px;
+  height: 24px;
+}
 
+/* Responsive */
+@media (max-width: 768px) {
+  .content-box {
+      width: 95%;
+      padding: 20px;
+  }
+  .footer-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
