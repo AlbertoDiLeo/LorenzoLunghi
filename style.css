@@ -15,7 +15,7 @@ body {
   padding: 40px;
   margin-top: 40px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombra più marcata */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Ombra più marcata */
   border: 1px solid #ccc; /* Bordo sottile per dare il senso di un foglio */
 }
 
@@ -77,42 +77,33 @@ body {
   border: 2px solid #007bff;
 }
 
-/* Footer compatto su una riga */
 footer {
-  background-color: #343a40;
+  background-color: #000; /* Sfondo nero */
   color: white;
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0; /* Aggiunto più spazio */
 }
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+
 .footer-link {
-  color: #f8f9fa;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
 }
+
 .footer-link:hover {
   text-decoration: underline;
 }
+
 .footer-icon {
-  width: 24px;
-  height: 24px;
+  width: 22px; /* Icone leggermente più grandi */
+  height: 22px;
+  vertical-align: middle;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .content-box {
-      width: 95%;
-      padding: 20px;
-  }
-  .footer-container {
-      flex-direction: column;
-      gap: 10px;
-  }
+small {
+  font-size: 0.9rem;
+  color: #ccc; /* Testo leggermente più chiaro */
 }
+
+

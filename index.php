@@ -111,6 +111,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
     <link rel="icon" href="immagini/Logo foto.JPG" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
 
@@ -118,7 +121,6 @@
 
     <div class="container d-flex justify-content-center">
         <div class="content-box">
-            <h1 class="title text-center">Geometra Lunghi Lorenzo</h1>
             <div class="text-center mt-3">
                 <img src="immagini/Logo foto.JPG" class="img-fluid logo-img" alt="Logo Geometra Lunghi Lorenzo">
             </div>
