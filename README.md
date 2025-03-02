@@ -47,6 +47,7 @@ Titoli:
 
 # Parti mancanti del progetto
 
+- Footer e navbar => ok
 - Home => mappa con sua posizine (API)
        => carosello con recensioni
 - Contatti => form preventivo funzionante
