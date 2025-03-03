@@ -21,6 +21,21 @@ body {
   margin: 30px auto; /* Centra la sezione */
 }
 
+/* Nasconde lo sfondo su dispositivi piccoli e fa sembrare il contenuto a tutta pagina */
+@media (max-width: 768px) {
+  body {
+    background-color: white !important; /* Sfondo bianco su mobile */
+  }
+  .main-content {
+    box-shadow: none; /* Rimuove l'ombra */
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
+    width: 100%; /* Occupa tutta la larghezza dello schermo */
+    margin: 0; /* Rimuove i margini */
+    padding: 20px; /* Mantiene il padding interno per la leggibilità */
+  }
+}
+
+
 
 
 
@@ -229,6 +244,69 @@ body {
 }
 
 
+
+
+
+/*chi sono*/
+/* Contenitore principale della bio */
+.bio-container {
+  display: flex;
+  gap: 20px;
+  background: #e9ecef;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile della foto */
+.bio-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Stile del testo */
+.bio-text {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Contenitore delle informazioni */
+.info-container {
+  background: #e9ecef;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Link stilizzati */
+.custom-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #d9534f;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .bio-text {
+    padding-left: 0;
+  }
+
+  .bio-image img {
+    max-width: 100%;
+  }
+}
 
 
 
