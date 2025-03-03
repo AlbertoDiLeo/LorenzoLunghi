@@ -179,6 +179,9 @@ body {
   border-radius: 25px;
   font-weight: bold;
   transition: background 0.3s ease-in-out;
+  min-width: 140px; /* Imposta una larghezza minima */
+  width: auto; /* Imposta la larghezza in base al contenuto */
+  display: inline-block; /* Evita che si estenda su tutta la riga */
 }
 
 /* Effetto hover sul bottone */
@@ -186,6 +189,16 @@ body {
   background: linear-gradient(to right, #feb47b, #ff7e5f);
   color: white;
 }
+
+/* Ridimensiona immagine in dettagli-servizio */
+.service-image {
+  max-width: 60%; /* Riduce la larghezza massima */
+  height: auto; /* Mantiene le proporzioni */
+  display: block;
+  margin: 0 auto; /* Centra l'immagine */
+}
+
+
 
 
 

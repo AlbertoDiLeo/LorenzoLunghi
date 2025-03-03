@@ -8,7 +8,7 @@
 
               <form action="preventivo.php" method="POST">
 
-                    <div class="row mb-3">
+                    <div class="row g-3 mb-3">
                     <div class="col-md-6">
                         <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome e cognome" required>
                     </div>
@@ -19,7 +19,7 @@
                     </div>
 
 
-                    <div class="row mb-3">
+                    <div class="row g-3 mb-3">
                     <div class="col-md-6">
                         <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
                     </div>

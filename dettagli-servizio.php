@@ -27,7 +27,7 @@ $servizi = [
     ],
 
     'pratiche-catastali' => [
-        'titolo' => 'Pratiche Catastali e rilievi topografici',
+        'titolo' => 'Pratiche Catastali e Rilievi Topografici',
         'immagine' => 'immagini/pratiche-catastali.jpg',
         'descrizione' => 
         '<p><strong>Pratiche Catastali</strong></p>  
@@ -154,8 +154,8 @@ $dati_servizio = $servizi[$servizio];
     <div class="main-content">
 
         <div class="container mt-5">
-            <img src="<?php echo $dati_servizio['immagine']; ?>" class="img-fluid rounded mb-3">
-            <h2><?php echo $dati_servizio['titolo']; ?></h2>
+            <img src="<?php echo $dati_servizio['immagine']; ?>" class="img-fluid rounded mb-3 service-image">
+            <h2 class="text-center text-danger"><?php echo $dati_servizio['titolo']; ?></h2>
             <p><?php echo $dati_servizio['descrizione']; ?></p>
             <a href="servizi.php" class="btn btn-secondary">Torna ai servizi</a>
         </div>
