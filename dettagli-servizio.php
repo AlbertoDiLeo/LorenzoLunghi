@@ -155,7 +155,7 @@ $dati_servizio = $servizi[$servizio];
 
         <div class="container mt-5">
             <img src="<?php echo $dati_servizio['immagine']; ?>" class="img-fluid rounded mb-3 service-image">
-            <h2 class="text-center text-danger"><?php echo $dati_servizio['titolo']; ?></h2>
+            <h2 class="service-title"><?php echo $dati_servizio['titolo']; ?></h2>
             <p><?php echo $dati_servizio['descrizione']; ?></p>
             <a href="servizi.php" class="btn btn-secondary">Torna ai servizi</a>
         </div>

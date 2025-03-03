@@ -40,6 +40,9 @@
                 <p><strong>P.IVA:</strong> 13310020964</p>
                 <p><strong>Iscritto all’Ordine Geometri Laureati di Lodi</strong> (n. 791)</p>
                 <p><strong>Iscritto all’albo dei Certificatori Energetici</strong> di Regione Lombardia (n. 34601)</p>
+                <p><strong>Email: </strong> Info.geomlunghi@gmail.com</p>
+                <p><strong>Telefono: </strong> +39 334 369 3310</p>
+                <p><strong>Indirizzo: </strong>Via Sandro Pertini, 6 - 26817, San Martino in Strada (LO), Italia</p>
               </div>
             </div>
 

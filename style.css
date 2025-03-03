@@ -190,13 +190,44 @@ body {
   color: white;
 }
 
-/* Ridimensiona immagine in dettagli-servizio */
+/* Stile per l'immagine nei dettagli servizio */
 .service-image {
-  max-width: 60%; /* Riduce la larghezza massima */
-  height: auto; /* Mantiene le proporzioni */
+  width: 70%; /* Riduce la larghezza su schermi grandi */
+  max-width: 600px; /* Impedisce che diventi troppo grande */
   display: block;
-  margin: 0 auto; /* Centra l'immagine */
+  margin: 0 auto; /* La centra */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
 }
+
+/* Regolazione per dispositivi mobili */
+@media (max-width: 768px) {
+  .service-image {
+    width: 90%; /* Aumenta la larghezza su schermi piccoli */
+    max-width: 100%; /* Permette di riempire il contenitore */
+  }
+}
+
+
+/* Stile migliorato per il titolo della pagina dettagli-servizio */
+.service-title {
+  text-align: center;
+  font-size: 2.2rem; /* Più grande e leggibile */
+  font-weight: bold;
+  color: #2c3e50; /* Blu notte per un aspetto professionale */
+  text-transform: uppercase; /* Testo tutto maiuscolo per più impatto */
+  letter-spacing: 1.5px; /* Leggera spaziatura tra le lettere */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera per risalto */
+  margin-bottom: 20px; /* Distanza dal testo successivo */
+}
+
+/* Regolazione per dispositivi mobili */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 1.8rem; /* Riduce la dimensione su schermi piccoli */
+  }
+}
+
 
 
 

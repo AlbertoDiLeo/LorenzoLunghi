@@ -48,16 +48,14 @@ Titoli:
 
 # Parti mancanti del progetto
 
-- Footer e navbar => ok
 - Home => carosello con recensioni
-- Servizi => mettere foto e sistemare titoli
 
 - Chat (?) => guardare sito Maggi
 - Sezione domande frequenti (in cosa consiste la professione di geometra)
 - Contatti => form preventivo funzionante ok, si puo aggiungere altro?
 - Chi sono => Curriculum (?), si puo aggiungere altro? migliorare card personale in base alla foto
-
-
+- Servizi => ok, mancano alcune descrizioni
+- Footer e navbar => ok
 
 
 
