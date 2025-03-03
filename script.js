@@ -1,31 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-  if (!document.getElementById("servizi-page")) return;
-  
-  const serviceTitles = document.querySelectorAll(".service-title");
-
-  serviceTitles.forEach(title => {
-      title.addEventListener("click", function () {
-          const icon = this.querySelector("i");
-          const isOpen = this.getAttribute("aria-expanded") === "true";
-
-          // Chiude tutte le altre icone
-          document.querySelectorAll(".service-title i").forEach(i => i.classList.replace("bi-chevron-up", "bi-chevron-down"));
-
-          // Cambia l'icona in base allo stato
-          if (isOpen) {
-              icon.classList.replace("bi-chevron-up", "bi-chevron-down");
-          } else {
-              icon.classList.replace("bi-chevron-down", "bi-chevron-up");
-          }
-      });
-  });
-});
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const recensioni = [

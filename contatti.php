@@ -20,9 +20,9 @@
 
     <div class="main-content">
 
-      <?php include 'pronto_intervento.php'; ?>
-
       <?php include 'form_preventivo.php'; ?>
+
+      <?php include 'pronto_intervento.php'; ?>
 
     </div>
 
