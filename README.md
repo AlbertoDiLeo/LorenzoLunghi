@@ -55,7 +55,7 @@ Titoli:
 - Chat (?) => guardare sito Maggi
 - Sezione domande frequenti (in cosa consiste la professione di geometra)
 - Contatti => form preventivo funzionante ok, si puo aggiungere altro?
-- Chi sono => Curriculum (?), si puo aggiungere altro?
+- Chi sono => Curriculum (?), si puo aggiungere altro? migliorare card personale in base alla foto
 
 
 

@@ -30,7 +30,8 @@
 
               <div class="card-body text-center">
                 <!--<h2 class="card-title mb-3">Chi sono</h2>-->
-                <p>Sono Lorenzo Lunghi, un geometra qualificato con esperienza nel settore edilizio e nella certificazione energetica. Mi occupo di progetti di edilizia civile e industriale, offrendo consulenze professionali per garantire efficienza e sicurezza nelle costruzioni.</p>
+                <p class="text-justify">Ciao, sono Lorenzo Lunghi, un geometra con una visione giovane e dinamica del mestiere. Mi sono abilitato nel 2024 e, proprio perché ho iniziato da poco, porto con me un approccio fresco, rapido ed efficiente, senza mai compromettere precisione e qualità. 
+                <br>Metto tutta la mia passione e competenza per offrirti un servizio chiaro, puntuale e su misura per le tue esigenze. Dall’inizio alla fine, ti guiderò con attenzione e professionalità.
                 <hr>
                 <p><strong>C.F.:</strong> LNGLNZ02E29F205Q</p>
                 <p><strong>P.IVA:</strong> 13310020964</p>

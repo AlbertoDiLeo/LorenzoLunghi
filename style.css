@@ -125,6 +125,13 @@ body {
 
 
 
+/* Aggiungi questa classe per giustificare il testo in chi sono*/
+.text-justify {
+  text-align: justify;
+}
+
+
+
 /* Footer */
 footer {
   background-color: #000; /* Sfondo nero */
