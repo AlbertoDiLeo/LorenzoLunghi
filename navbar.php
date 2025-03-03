@@ -29,7 +29,7 @@
                     <a class="nav-link <?php echo ($current_page == 'servizi.php') ? 'active' : ''; ?>" href="servizi.php">Servizi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($current_page == 'contatti.php') ? 'active' : ''; ?>" href="contatti.php">Contatti</a>
+                    <a class="nav-link <?php echo ($current_page == 'contatti.php') ? 'active' : ''; ?>" href="contatti.php">Contattami</a>
                 </li>
             </ul>
         </div>

@@ -49,13 +49,14 @@ Titoli:
 # Parti mancanti del progetto
 
 - Footer e navbar => ok
-- Home => mappa con sua posizine (API)
-       => carosello con recensioni
-- Contatti => form preventivo funzionante ok
-- Chat (?) => guardare sito Maggi
-- Chi sono => foto, Curriculum (?)
+- Home => carosello con recensioni
 - Servizi => mettere foto e sistemare titoli
+
+- Chat (?) => guardare sito Maggi
 - Sezione domande frequenti (in cosa consiste la professione di geometra)
+- Contatti => form preventivo funzionante ok, si puo aggiungere altro?
+- Chi sono => Curriculum (?), si puo aggiungere altro?
+
 
 
 
@@ -79,8 +80,4 @@ https://www.maggispurghi.com/
 ## Autore
 
 Alberto Di Leo
-
-
-
-## Consigli
 
