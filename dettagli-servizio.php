@@ -139,18 +139,33 @@ $dati_servizio = $servizi[$servizio];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $dati_servizio['titolo']; ?> | Lorenzo Lunghi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizzato -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="immagini/Logo foto.JPG" type="image/x-icon">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
 
-    <div class="container mt-5">
-        <img src="<?php echo $dati_servizio['immagine']; ?>" class="img-fluid rounded mb-3">
-        <h2><?php echo $dati_servizio['titolo']; ?></h2>
-        <p><?php echo $dati_servizio['descrizione']; ?></p>
-        <a href="servizi.php" class="btn btn-secondary">Torna ai servizi</a>
-    </div>
+    <div class="main-content">
 
+        <div class="container mt-5">
+            <img src="<?php echo $dati_servizio['immagine']; ?>" class="img-fluid rounded mb-3">
+            <h2><?php echo $dati_servizio['titolo']; ?></h2>
+            <p><?php echo $dati_servizio['descrizione']; ?></p>
+            <a href="servizi.php" class="btn btn-secondary">Torna ai servizi</a>
+        </div>
+
+    </div>
     <?php include 'footer.php'; ?>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

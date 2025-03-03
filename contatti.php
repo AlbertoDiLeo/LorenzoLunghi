@@ -19,10 +19,13 @@
     <?php include 'navbar.php'; ?>
 
     <div class="main-content">
+      <div class="container mt-5">
 
-      <?php include 'form_preventivo.php'; ?>
+        <?php include 'form_preventivo.php'; ?>
 
-      <?php include 'pronto_intervento.php'; ?>
+        <?php include 'pronto_intervento.php'; ?>
+
+      </div>
 
     </div>
 
