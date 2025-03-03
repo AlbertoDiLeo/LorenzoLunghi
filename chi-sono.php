@@ -30,8 +30,11 @@
 
               <div class="card-body text-center">
                 <!--<h2 class="card-title mb-3">Chi sono</h2>-->
-                <p>Ciao, sono Lorenzo Lunghi, un geometra con una visione giovane e dinamica del mestiere. Mi sono abilitato nel 2024 e, proprio perché ho iniziato da poco, porto con me un approccio fresco, rapido ed efficiente, senza mai compromettere precisione e qualità. 
-                <br>Metto tutta la mia passione e competenza per offrirti un servizio chiaro, puntuale e su misura per le tue esigenze. Dall’inizio alla fine, ti guiderò con attenzione e professionalità.
+                <p>Ciao, sono Lorenzo Lunghi, un geometra con una visione giovane e dinamica del mestiere. Mi sono abilitato nel 2024 e, proprio perché ho iniziato da poco, porto con me un approccio fresco, rapido ed efficiente, senza mai compromettere precisione e qualità.</p>  
+
+                <p>La mia energia e il desiderio di affermarmi nel settore mi spingono a offrire un servizio attento, professionale e accessibile, con soluzioni su misura per ogni esigenza. Lavoro con passione per garantire un'assistenza completa, chiara e puntuale, accompagnandoti in ogni fase del processo.</p>  
+
+                <p>Se cerchi un professionista affidabile e motivato, pronto a mettersi in gioco per offrirti il massimo, sono qui per te.</p>
                 <hr>
                 <p><strong>C.F.:</strong> LNGLNZ02E29F205Q</p>
                 <p><strong>P.IVA:</strong> 13310020964</p>

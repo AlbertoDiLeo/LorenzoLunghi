@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi sono | Lorenzo Lunghi</title>
+    <title>Contattami | Lorenzo Lunghi</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizzato -->
@@ -19,6 +19,8 @@
     <?php include 'navbar.php'; ?>
 
     <div class="main-content">
+
+      <?php include 'pronto_intervento.php'; ?>
 
       <?php include 'form_preventivo.php'; ?>
 

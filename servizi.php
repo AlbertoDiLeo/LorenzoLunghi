@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi sono | Lorenzo Lunghi</title>
+    <title>Servizi | Lorenzo Lunghi</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizzato -->
@@ -26,16 +26,16 @@
                     <div class="accordion" id="servicesAccordion">
 
                         <!-- Servizio 1 -->
-                        <div class="card mb-2">
-                            <div class="card-header">
+                      <div class="card mb-2">
+                          <div class="card-header">
                                 <button class="btn w-100 text-start d-flex justify-content-between align-items-center service-title"
                                     data-bs-toggle="collapse" data-bs-target="#service1" aria-expanded="false">
-                                    <strong>📋 Progettazione e pratiche edilizie</strong>
+                                    <strong>Progettazione e pratiche edilizie</strong>
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
-                            </div>
-                            <div id="service1" class="collapse" data-bs-parent="#servicesAccordion">
-                                <div class="card-body d-flex flex-column flex-md-row">
+                          </div>
+                          <div id="service1" class="collapse" data-bs-parent="#servicesAccordion">
+                              <div class="card-body d-flex flex-column flex-md-row">
                                     <img src="immagini/pratiche-edilizie.jpg" class="img-fluid me-md-3 mb-3 mb-md-0" alt="Pratiche edilizie" width="150">
                                     <p>Offriamo un servizio completo e professionale per la gestione, la regolamentazione e l’adeguamento della tua proprietà, garantendo il pieno rispetto delle normative edilizie vigenti. Ci occupiamo della presentazione e del disbrigo di tutte le pratiche necessarie presso gli enti competenti, facilitando l’ottenimento delle autorizzazioni e la regolarizzazione di eventuali abusi edilizi.</p>  
 
@@ -53,16 +53,16 @@
 
                                     <p>Grazie a un approccio innovativo e mirato, garantiamo un servizio efficiente, preciso e personalizzato, accompagnandoti in ogni fase del processo.</p>
                                 
-                                  </div>
-                            </div>
-                        </div>
+                                </div>
+                          </div>
+                      </div>
 
                         <!-- Servizio 2 -->
                         <div class="card mb-2">
                             <div class="card-header">
                                 <button class="btn w-100 text-start d-flex justify-content-between align-items-center service-title"
                                     data-bs-toggle="collapse" data-bs-target="#service2" aria-expanded="false">
-                                    <strong>📋 Pratiche Catastali e rilievi topografici</strong>
+                                    <strong>Pratiche Catastali e rilievi topografici</strong>
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
@@ -108,7 +108,7 @@
                             <div class="card-header">
                                 <button class="btn w-100 text-start d-flex justify-content-between align-items-center service-title"
                                     data-bs-toggle="collapse" data-bs-target="#service3" aria-expanded="false">
-                                    <strong>Certificazioni energetiche/strong>
+                                    <strong>Certificazioni energetiche</strong>
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
@@ -159,6 +159,7 @@
                                     <p>Lascia spazio alla fantasia, noi ti aiuteremo a trasformarla in realtà con un approccio tecnico e professionale.</p>
                             </div>
                         </div>
+                      </div>
 
                         <!-- Servizio 5 -->
                         <div class="card mb-2">
@@ -212,14 +213,15 @@
                             </div>
                         </div>
 
+                        
+
                         <!-- Aggiungi altri servizi seguendo lo stesso schema -->
 
                     </div>
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
     </div>
-
     <?php include 'footer.php'; ?>
 
     <!-- Bootstrap JS -->
