@@ -5,6 +5,8 @@ use PHPMailer\PHPMailer\Exception;
 //require 'vendor/autoload.php';
 require __DIR__ . '/vendor/autoload.php';
 
+header('Content-Type: application/json'); // Assicura che la risposta sia JSON puro
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -56,17 +58,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
        
     } catch (Exception $e) {
-        $_SESSION['error_message'] = "Errore durante l'invio del messaggio: {$mail->ErrorInfo}";
-        echo "Errore durante l'invio del messaggio: {$mail->ErrorInfo}<br>";
+        //$_SESSION['error_message'] = "Errore durante l'invio del messaggio: {$mail->ErrorInfo}";
+        die(json_encode(["status" => "error", "message" => "Errore durante l'invio: {$mail->ErrorInfo}"]));
+        //echo "Errore durante l'invio del messaggio: {$mail->ErrorInfo}<br>";
         //header("Location: errore_preventivo.php"); // Redirect a una pagina di errore
-        exit();
+        //exit();
     }
-    header("Location: conferma_preventivo.php"); // Redirect a una pagina di conferma
-    exit();
+    die(json_encode(["status" => "success", "message" => "Preventivo inviato con successo!"]));
+    //header("Location: conferma_preventivo.php"); // Redirect a una pagina di conferma
+    //exit();
 } else {
-    $_SESSION['error_message'] = "Richiesta non valida.";
-    echo "Richiesta non valida.<br>";
-    header("Location: errore_preventivo.php"); // Redirect a una pagina di errore
-    exit();
+    //$_SESSION['error_message'] = "Richiesta non valida.";
+    die(json_encode(["status" => "error", "message" => "Richiesta non valida."]));
+    //echo "Richiesta non valida.<br>";
+    //header("Location: errore_preventivo.php"); // Redirect a una pagina di errore
+    //exit();
 }
 ?>

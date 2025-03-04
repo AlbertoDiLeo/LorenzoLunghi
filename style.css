@@ -334,3 +334,23 @@ footer {
   transform: scale(1.2);
   color: #007bff !important; /* Blu di Bootstrap */
 }
+
+
+
+
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 40%;
+  background-color: #28a745; /* Verde per successo */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.notification.error {
+  background-color: #dc3545; /* Rosso per errore */
+}

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function showNotification(message, type = 'success') {
+/*function showNotification(message, type = 'success') {
   const notification = document.getElementById('notification');
 
   // Se l'elemento non esiste, esci dalla funzione
@@ -50,4 +50,51 @@ function showNotification(message, type = 'success') {
       notification.classList.add('d-none');
       notification.dataset.initialized = ""; // Reset per la prossima volta
   }, 3000);
-}
+}*/
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+
+  if (!form) return; // Se il form non esiste, interrompe l'esecuzione dello script
+
+  form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Blocca il comportamento predefinito del form
+
+      let formData = new FormData(this);
+
+      fetch("preventivo.php", {
+          method: "POST",
+          body: formData
+      })
+      .then(response => response.json()) // Converte la risposta in JSON
+      .then(data => {
+          showNotification(data.message, data.status);
+          if (data.status === "success") {
+              form.reset(); // Resetta il form dopo l'invio riuscito
+          }
+      })
+      .catch(error => {
+          showNotification("Si è verificato un errore", "error");
+          console.error("Errore durante l'invio:", error);
+      });
+  });
+
+  function showNotification(message, type) {
+      let notification = document.createElement("div");
+      notification.innerText = message;
+      notification.classList.add("notification", type === "success" ? "success" : "error");
+
+      document.body.appendChild(notification);
+
+      setTimeout(() => {
+          notification.remove();
+      }, 3000); // La notifica scompare dopo 3 secondi
+  }
+});
+
+
