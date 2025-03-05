@@ -65,6 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
       event.preventDefault(); // Blocca il comportamento predefinito del form
 
+      const telefono = document.getElementById("telefono").value;
+      const telefonoRegex = /^[0-9]{10}$/; // Modifica questa regex in base al formato desiderato
+
+      if (!telefonoRegex.test(telefono)) {
+        event.preventDefault();
+        showNotification("Inserisci un numero di telefono valido.", "error");
+        return;
+      }
+
       let formData = new FormData(this);
 
       fetch("preventivo.php", {
@@ -97,4 +106,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("api.php") // Chiama il file PHP che nasconde la API Key
+    .then(response => response.json())
+    .then(data => {
+      let reviewsContainer = document.getElementById("reviewsContainer");
+      if (data.result && data.result.reviews) {
+        data.result.reviews.forEach(review => {
+          let reviewCard = `
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">${review.author_name}</h5>
+                <p class="card-text">"${review.text}"</p>
+                <p class="text-muted">⭐ ${review.rating} / 5</p>
+              </div>
+            </div>
+          `;
+          reviewsContainer.innerHTML += reviewCard;
+        });
+      } else {
+        reviewsContainer.innerHTML = "<p>Nessuna recensione trovata.</p>";
+      }
+    })
+    .catch(error => console.error("Errore nel recupero delle recensioni:", error));
+});
 

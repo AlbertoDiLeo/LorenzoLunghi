@@ -54,26 +54,14 @@
             </div>
         </section>
 
-
-
-        <!-- PRONTO INTERVENTO H-24 -->
-        <!--<section class="py-5 bg-dark text-white text-center">
-            <div class="container">
-                <h2 class="fw-bold">Pronto Intervento H-24</h2>
-                <p class="lead">Hai un’urgenza? Contattami subito, sono sempre operativo per offrirti assistenza immediata.</p>
-                <a href="tel:+393343693310" class="btn btn-outline-warning btn-lg custom-btn-intervento">📞 Chiama Subito</a>
-            </div>
-        </section>-->
-
         <?php include 'pronto_intervento.php'; ?>
 
         <!-- CAROSELLO RECENSIONI -->
         <section class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-4">Cosa dicono di me</h2>
+            <div id="reviewsContainer" class="container">
+                <!--<h2 class="text-center fw-bold mb-4">Cosa dicono di me</h2>
                 <div class="position-relative">
                     <div id="recensioniContainer" class="d-flex overflow-auto gap-3 py-3">
-                        <!-- Template recensione (verrà clonato) -->
                         <div id="recensioneTemplate" class="card text-center p-4" style="width: 300px; display: none;">
                             <div class="card-body">
                                 <p class="card-text fst-italic">"Testo recensione..."</p>
@@ -81,7 +69,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
 
