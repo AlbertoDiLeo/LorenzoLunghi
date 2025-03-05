@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const recensioni = [
       { testo: "Servizio impeccabile! Puntuali, precisi e professionali. Consigliatissimo!", autore: "Marco R." },
       { testo: "Lavoro svolto alla perfezione e nei tempi stabiliti. Un vero professionista!", autore: "Anna L." },
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       newRecensione.querySelector(".card-title").textContent = `- ${autore}`;
       recensioniContainer.appendChild(newRecensione);
   });
-});
+});*/
 
 
 /*function showNotification(message, type = 'success') {
@@ -109,27 +109,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("api.php") // Chiama il file PHP che nasconde la API Key
-    .then(response => response.json())
-    .then(data => {
-      let reviewsContainer = document.getElementById("reviewsContainer");
-      if (data.result && data.result.reviews) {
-        data.result.reviews.forEach(review => {
-          let reviewCard = `
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">${review.author_name}</h5>
-                <p class="card-text">"${review.text}"</p>
-                <p class="text-muted">⭐ ${review.rating} / 5</p>
-              </div>
-            </div>
-          `;
-          reviewsContainer.innerHTML += reviewCard;
-        });
-      } else {
-        reviewsContainer.innerHTML = "<p>Nessuna recensione trovata.</p>";
-      }
-    })
-    .catch(error => console.error("Errore nel recupero delle recensioni:", error));
+  let reviewsContainer = document.getElementById("reviewsContainer");
+
+  // 🔍 Debug: Controlla se l'elemento esiste
+  if (!reviewsContainer) {
+      console.error("Errore: Elemento #reviewsContainer non trovato nel DOM!");
+      return;
+  }
+
+  fetch("api.php") // Assicurati che api.php restituisca i dati corretti!
+      .then(response => response.json())
+
+      .then(data => {
+        console.log("Response JSON:", data); // 🔍 Controllo del JSON ricevuto
+          if (data.result && data.result.reviews) {
+            console.log("Recensioni trovate:", data.result.reviews); // 🔍 Controllo delle recensioni
+            console.log("Numero di recensioni:", data.result.reviews.length); // 🔍 Controllo del numero di recensioni
+            console.log("Prima recensione:", data.result.reviews[0]); // 🔍 Controllo della prima recensione
+            console.log(data.result);
+              data.result.reviews.forEach(review => {
+                  let reviewCard = `
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">${review.author_name}</h5>
+                              <p class="card-text">"${review.text}"</p>
+                              <p class="text-muted">⭐ ${review.rating} / 5</p>
+                          </div>
+                      </div>
+                  `;
+                  reviewsContainer.innerHTML += reviewCard;
+              });
+          } else {
+              reviewsContainer.innerHTML = "<p>Nessuna recensione trovata.</p>";
+          }
+      })
+      .catch(error => console.error("Errore nel recupero delle recensioni:", error));
 });
 
